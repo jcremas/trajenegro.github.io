@@ -10,7 +10,7 @@ interface TextBlockProps {
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
 
-const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center" }: TextBlockProps) => {
+const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", containImage = false }: TextBlockProps) => {
   const alignClass = alignment === "left" ? "items-start text-left" : alignment === "right" ? "items-end text-right" : "items-center text-center";
 
   return (
