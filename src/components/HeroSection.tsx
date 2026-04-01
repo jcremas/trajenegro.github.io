@@ -13,13 +13,15 @@ const HeroSection = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 5, ease: asmrEase }}
       >
-        <img
-          src={heroBottle}
-          alt="Traje Negro"
-          className="w-full h-full object-cover asmr-ken-burns"
-          width={1920}
-          height={1080}
-        />
+        <div className="w-full h-full bg-black flex items-center justify-center">
+          <img
+            src={heroBottle}
+            alt="Traje Negro"
+            className="h-full object-contain asmr-ken-burns"
+            width={1080}
+            height={1920}
+          />
+        </div>
         <div className="absolute inset-0 bg-background/55" />
       </motion.div>
 
