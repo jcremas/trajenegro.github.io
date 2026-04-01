@@ -76,7 +76,7 @@ const Index = () => {
       {/* BLOQUE 4 */}
       <TextBlock
         image={sceneExclusive}
-        overlayOpacity={0.75}
+        overlayOpacity={0.65}
         lines={[
           "No es para todos.",
           "Y está bien.",
