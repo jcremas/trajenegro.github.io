@@ -40,7 +40,7 @@ const CTASection = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 2.5, ease: asmrEase, delay: 0.8 }}
         >
-          Algunos vinos acompañan.
+          Algunos vinos acompañan, otros definen.
         </motion.p>
         <motion.p
           className="font-serif-display text-xl md:text-3xl text-ivory font-light italic mb-14"
@@ -49,7 +49,7 @@ const CTASection = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 2.5, ease: asmrEase, delay: 1.4 }}
         >
-          Otros definen.
+          Beber para creer.
         </motion.p>
 
         <motion.button
