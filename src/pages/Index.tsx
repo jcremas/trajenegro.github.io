@@ -90,9 +90,6 @@ const Index = () => {
 
       {/* CTA + CIERRE */}
       <CTASection />
-
-      {/* FOOTER */}
-      <FooterSection />
     </main>
   );
 };
