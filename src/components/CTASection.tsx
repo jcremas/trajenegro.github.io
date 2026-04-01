@@ -68,6 +68,16 @@ const CTASection = () => {
 
         <div className="w-10 h-px bg-gold mt-12 asmr-breathe" />
       </motion.div>
+
+      <motion.p
+        className="absolute bottom-6 left-0 right-0 z-10 text-center text-ivory/40 text-[10px] md:text-xs tracking-wide px-4"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 2, ease: asmrEase, delay: 2.5 }}
+      >
+        Contiene alcohol. Prohibido el consumo a menores de 18 años. Beber responsablemente.
+      </motion.p>
     </section>
   );
 };
