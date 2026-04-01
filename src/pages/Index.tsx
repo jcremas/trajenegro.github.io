@@ -8,6 +8,8 @@ import FooterSection from "@/components/FooterSection";
 
 import sceneWineGlass from "@/assets/scene-wine-glass.jpg";
 import sceneVineyard from "@/assets/scene-vineyard.jpg";
+import sceneElegance from "@/assets/scene-elegance.jpg";
+import sceneExclusive from "@/assets/scene-exclusive.jpg";
 
 const Index = () => {
   const mainRef = useRef<HTMLElement>(null);
