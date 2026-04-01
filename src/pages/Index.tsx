@@ -59,7 +59,7 @@ const Index = () => {
       {/* BLOQUE 3 */}
       <TextBlock
         image={sceneVineyard}
-        overlayOpacity={0.75}
+        overlayOpacity={0.65}
         lines={[
           "Cada detalle importa.",
           "",
