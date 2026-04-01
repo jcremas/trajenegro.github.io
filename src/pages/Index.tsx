@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import TextBlock from "@/components/TextBlock";
 import BlackTransition from "@/components/BlackTransition";
 import CTASection from "@/components/CTASection";
-import FooterSection from "@/components/FooterSection";
+
 
 import sceneWineGlass from "@/assets/scene-wine-glass.jpg";
 import sceneVineyard from "@/assets/scene-vineyard.jpg";
@@ -90,9 +90,6 @@ const Index = () => {
 
       {/* CTA + CIERRE */}
       <CTASection />
-
-      {/* FOOTER */}
-      <FooterSection />
     </main>
   );
 };
