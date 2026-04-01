@@ -41,7 +41,7 @@ const Index = () => {
       {/* BLOQUE 2 */}
       <TextBlock
         image={sceneElegance}
-        overlayOpacity={0.78}
+        overlayOpacity={0.68}
         lines={[
           "La elegancia no se fuerza.",
           "Se sostiene.",
