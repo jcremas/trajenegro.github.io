@@ -5,6 +5,7 @@ interface TextBlockProps {
   image?: string;
   overlayOpacity?: number;
   alignment?: "center" | "left" | "right";
+  containImage?: boolean;
 }
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
