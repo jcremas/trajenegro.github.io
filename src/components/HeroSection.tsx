@@ -47,7 +47,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p
-          className="font-serif-display text-lg md:text-xl text-muted-foreground italic font-light tracking-widest"
+          className="font-serif-display text-2xl md:text-4xl text-muted-foreground italic font-light tracking-widest"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.8 }}
           transition={{ duration: 3, ease: asmrEase, delay: 3.5 }}
