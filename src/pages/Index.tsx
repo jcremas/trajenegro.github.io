@@ -25,6 +25,7 @@ const Index = () => {
       {/* BLOQUE 1 */}
       <TextBlock
         image={sceneWineGlass}
+        containImage
         overlayOpacity={0.8}
         lines={[
           "No es un vino.",

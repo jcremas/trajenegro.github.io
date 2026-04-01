@@ -5,11 +5,12 @@ interface TextBlockProps {
   image?: string;
   overlayOpacity?: number;
   alignment?: "center" | "left" | "right";
+  containImage?: boolean;
 }
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
 
-const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center" }: TextBlockProps) => {
+const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", containImage = false }: TextBlockProps) => {
   const alignClass = alignment === "left" ? "items-start text-left" : alignment === "right" ? "items-end text-right" : "items-center text-center";
 
   return (
@@ -22,14 +23,16 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center" }:
           viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 3.5, ease: asmrEase }}
         >
-          <img
-            src={image}
-            alt=""
-            className="w-full h-full object-cover asmr-ken-burns"
-            loading="lazy"
-            width={1920}
-            height={1080}
-          />
+          <div className={`w-full h-full ${containImage ? 'bg-black flex items-center justify-center' : ''}`}>
+            <img
+              src={image}
+              alt=""
+              className={`${containImage ? 'h-full object-contain' : 'w-full h-full object-cover'} asmr-ken-burns`}
+              loading="lazy"
+              width={1920}
+              height={1080}
+            />
+          </div>
           <div className="absolute inset-0 bg-background" style={{ opacity: overlayOpacity }} />
         </motion.div>
       )}
