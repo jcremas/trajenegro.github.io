@@ -25,7 +25,7 @@ const Index = () => {
       {/* BLOQUE 1 */}
       <TextBlock
         image={sceneWineGlass}
-        overlayOpacity={0.6}
+        overlayOpacity={0.5}
         lines={[
           "No es un vino.",
           "Es una forma de estar.",
@@ -41,7 +41,7 @@ const Index = () => {
       {/* BLOQUE 2 */}
       <TextBlock
         image={sceneElegance}
-        overlayOpacity={0.78}
+        overlayOpacity={0.68}
         lines={[
           "La elegancia no se fuerza.",
           "Se sostiene.",
@@ -59,7 +59,7 @@ const Index = () => {
       {/* BLOQUE 3 */}
       <TextBlock
         image={sceneVineyard}
-        overlayOpacity={0.75}
+        overlayOpacity={0.65}
         lines={[
           "Cada detalle importa.",
           "",
@@ -76,7 +76,7 @@ const Index = () => {
       {/* BLOQUE 4 */}
       <TextBlock
         image={sceneExclusive}
-        overlayOpacity={0.75}
+        overlayOpacity={0.65}
         lines={[
           "No es para todos.",
           "Y está bien.",

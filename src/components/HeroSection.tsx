@@ -22,7 +22,7 @@ const HeroSection = () => {
             height={1920}
           />
         </div>
-        <div className="absolute inset-0 bg-background/55" />
+        <div className="absolute inset-0 bg-background/45" />
       </motion.div>
 
       {/* Content - ultra slow fade in */}
