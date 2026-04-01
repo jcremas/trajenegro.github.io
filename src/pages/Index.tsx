@@ -8,6 +8,8 @@ import FooterSection from "@/components/FooterSection";
 
 import sceneWineGlass from "@/assets/scene-wine-glass.jpg";
 import sceneVineyard from "@/assets/scene-vineyard.jpg";
+import sceneElegance from "@/assets/scene-elegance.jpg";
+import sceneExclusive from "@/assets/scene-exclusive.jpg";
 
 const Index = () => {
   const mainRef = useRef<HTMLElement>(null);
@@ -38,6 +40,8 @@ const Index = () => {
 
       {/* BLOQUE 2 */}
       <TextBlock
+        image={sceneElegance}
+        overlayOpacity={0.78}
         lines={[
           "La elegancia no se fuerza.",
           "Se sostiene.",
@@ -71,6 +75,8 @@ const Index = () => {
 
       {/* BLOQUE 4 */}
       <TextBlock
+        image={sceneExclusive}
+        overlayOpacity={0.75}
         lines={[
           "No es para todos.",
           "Y está bien.",
