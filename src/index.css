@@ -80,20 +80,61 @@
     height: 100dvh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
   }
 }
 
 @layer utilities {
   .text-cinematic {
-    @apply uppercase tracking-[0.25em] font-light;
+    @apply uppercase tracking-[0.3em] font-extralight;
   }
 
   .text-cinematic-lg {
-    @apply uppercase tracking-[0.15em] md:tracking-[0.3em] font-extralight text-3xl md:text-6xl lg:text-7xl;
+    @apply uppercase tracking-[0.2em] md:tracking-[0.4em] font-extralight text-3xl md:text-5xl lg:text-6xl;
   }
 
   .font-serif-display {
     font-family: 'Cormorant Garamond', serif;
+  }
+
+  /* ASMR breathing glow on gold lines */
+  .asmr-breathe {
+    animation: asmr-breathe 6s ease-in-out infinite;
+  }
+
+  .asmr-breathe-slow {
+    animation: asmr-breathe 10s ease-in-out infinite;
+  }
+
+  @keyframes asmr-breathe {
+    0%, 100% {
+      opacity: 0.4;
+      box-shadow: 0 0 4px hsl(38 45% 58% / 0.1);
+    }
+    50% {
+      opacity: 1;
+      box-shadow: 0 0 20px hsl(38 45% 58% / 0.3);
+    }
+  }
+
+  /* Ultra-subtle floating */
+  .asmr-float {
+    animation: asmr-float 8s ease-in-out infinite;
+  }
+
+  @keyframes asmr-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+  }
+
+  /* Slow Ken Burns for bg images */
+  .asmr-ken-burns {
+    animation: asmr-ken-burns 30s ease-in-out infinite alternate;
+  }
+
+  @keyframes asmr-ken-burns {
+    0% { transform: scale(1) translate(0, 0); }
+    100% { transform: scale(1.08) translate(-1%, -0.5%); }
   }
 }

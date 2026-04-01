@@ -7,6 +7,8 @@ interface TextBlockProps {
   alignment?: "center" | "left" | "right";
 }
 
+const asmrEase = [0.25, 0.1, 0.25, 1] as const;
+
 const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center" }: TextBlockProps) => {
   const alignClass = alignment === "left" ? "items-start text-left" : alignment === "right" ? "items-end text-right" : "items-center text-center";
 
@@ -15,15 +17,15 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center" }:
       {image && (
         <motion.div
           className="absolute inset-0"
-          initial={{ opacity: 0, scale: 1.1 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 1.8, ease: "easeOut" }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 3.5, ease: asmrEase }}
         >
           <img
             src={image}
             alt=""
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover asmr-ken-burns"
             loading="lazy"
             width={1920}
             height={1080}
@@ -33,31 +35,31 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center" }:
       )}
 
       <motion.div
-        className={`relative z-10 flex flex-col ${alignClass} px-8 md:px-16 max-w-[700px]`}
-        initial={{ opacity: 0, y: 50 }}
+        className={`relative z-10 flex flex-col ${alignClass} px-8 md:px-16 max-w-[650px]`}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 2.5, ease: asmrEase }}
       >
-        <div className="w-10 h-px bg-gold mb-10" />
+        <div className="w-8 h-px bg-gold mb-12 asmr-breathe" />
         {lines.map((line, i) => {
           if (line === "") {
-            return <div key={i} className="h-4 md:h-6" />;
+            return <div key={i} className="h-6 md:h-10" />;
           }
           return (
             <motion.p
               key={i}
-              className="font-serif-display text-xl md:text-3xl lg:text-4xl text-ivory font-light leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.3 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.15 * i }}
+              className="font-serif-display text-xl md:text-2xl lg:text-3xl text-ivory font-light leading-loose"
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 0.9, y: 0 }}
+              viewport={{ once: false, amount: 0.2 }}
+              transition={{ duration: 2, ease: asmrEase, delay: 0.3 * i }}
             >
               {line}
             </motion.p>
           );
         })}
-        <div className="w-10 h-px bg-gold mt-10" />
+        <div className="w-8 h-px bg-gold mt-12 asmr-breathe" />
       </motion.div>
     </section>
   );
