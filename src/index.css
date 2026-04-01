@@ -95,7 +95,8 @@
   }
 
   .font-serif-display {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
   }
 
   /* ASMR breathing glow on gold lines */
