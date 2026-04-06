@@ -91,7 +91,7 @@
   }
 
   .text-cinematic-lg {
-    @apply uppercase tracking-[0.2em] md:tracking-[0.4em] font-extralight text-3xl md:text-5xl lg:text-6xl;
+    @apply uppercase tracking-[0.2em] md:tracking-[0.4em] font-extralight text-3xl md:text-6xl lg:text-7xl;
   }
 
   .font-serif-display {
