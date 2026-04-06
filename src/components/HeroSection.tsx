@@ -24,8 +24,8 @@ const HeroSection = () => {
             onClick={() => setLang(l.code)}
             className={`text-[11px] tracking-[0.25em] transition-all duration-700 ${
               lang === l.code
-                ? "text-gold border-b border-gold/60 pb-0.5"
-                : "text-ivory/40 hover:text-ivory/70"
+                ? "text-white border-b border-white/80 pb-0.5 font-semibold"
+                : "text-white/50 hover:text-white/80"
             }`}
           >
             {l.label}
