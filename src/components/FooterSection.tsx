@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 import sceneFooter from "@/assets/scene-footer.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
 
 const FooterSection = () => {
+  const { lang } = useLanguage();
+  const t = translations.footer;
+
   return (
     <section className="snap-section relative h-[100dvh] flex items-center justify-center bg-background overflow-hidden">
       <motion.div
@@ -40,7 +45,7 @@ const FooterSection = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 3, ease: asmrEase, delay: 0.5 }}
         >
-          TRAJE NEGRO
+          {t.title[lang]}
         </motion.h2>
 
         <motion.p
@@ -50,7 +55,7 @@ const FooterSection = () => {
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 3, ease: asmrEase, delay: 1 }}
         >
-          Primera edición disponible próximamente
+          {t.subtitle[lang]}
         </motion.p>
 
         <div className="w-12 h-px bg-gold mt-14 asmr-breathe-slow" />

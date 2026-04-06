@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 import sceneCellar from "@/assets/scene-cellar.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
 
 const CTASection = () => {
+  const { lang } = useLanguage();
+  const t = translations.cta;
+
   return (
     <section className="snap-section relative h-[100dvh] flex items-center justify-center bg-background overflow-hidden">
       <motion.div
@@ -40,7 +45,7 @@ const CTASection = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 2.5, ease: asmrEase, delay: 0.8 }}
         >
-          Algunos vinos acompañan, otros definen.
+          {t.line1[lang]}
         </motion.p>
         <motion.p
           className="font-serif-display text-[28px] md:text-3xl text-ivory font-light italic mb-14"
@@ -49,7 +54,7 @@ const CTASection = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 2.5, ease: asmrEase, delay: 1.4 }}
         >
-          Beber para creer.
+          {t.line2[lang]}
         </motion.p>
 
         <motion.button
@@ -63,7 +68,7 @@ const CTASection = () => {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.99 }}
         >
-          EXPLORAR TRAJE NEGRO
+          {t.button[lang]}
         </motion.button>
 
         <div className="w-10 h-px bg-gold mt-12 asmr-breathe" />
@@ -76,7 +81,7 @@ const CTASection = () => {
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 2, ease: asmrEase, delay: 2.5 }}
       >
-        Contiene alcohol. Prohibido el consumo a menores de 18 años. Beber responsablemente.
+        {t.disclaimer[lang]}
       </motion.p>
     </section>
   );

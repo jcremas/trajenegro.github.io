@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import heroBottle from "@/assets/hero-bottle.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { translations } from "@/i18n/translations";
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
 
 const HeroSection = () => {
+  const { lang } = useLanguage();
+  const t = translations.hero;
+
   return (
     <section className="snap-section relative h-[100dvh] flex items-center justify-center bg-background overflow-hidden">
-      {/* Background with ultra-slow Ken Burns */}
       <motion.div
         className="absolute inset-0"
         initial={{ opacity: 0, scale: 1.05 }}
@@ -25,7 +29,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-background/45" />
       </motion.div>
 
-      {/* Content - ultra slow fade in */}
       <motion.div
         className="relative z-10 flex flex-col items-center text-center gap-8 asmr-float"
         initial={{ opacity: 0, y: 20 }}
@@ -45,7 +48,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, letterSpacing: "0.4em" }}
           transition={{ duration: 4, ease: asmrEase, delay: 2 }}
         >
-          TRAJE NEGRO
+          {t.title[lang]}
         </motion.h1>
 
         <motion.p
@@ -54,7 +57,7 @@ const HeroSection = () => {
           animate={{ opacity: 0.8 }}
           transition={{ duration: 3, ease: asmrEase, delay: 3.5 }}
         >
-          El carácter no se negocia.
+          {t.subtitle[lang]}
         </motion.p>
 
         <motion.div
