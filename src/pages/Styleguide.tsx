@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
@@ -69,6 +69,15 @@ const ComponentDemo = ({ label, children }: { label: string; children: React.Rea
 /* ── page ── */
 const Styleguide = () => {
   const [switchOn, setSwitchOn] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.style.overflow = "auto";
+    document.body.style.overflow = "auto";
+    return () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-background p-8 md:p-16 max-w-6xl mx-auto">
