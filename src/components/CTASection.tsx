@@ -34,7 +34,7 @@ const CTASection = () => {
         <div className="w-10 h-px bg-gold mb-12 asmr-breathe" />
 
         <motion.p
-          className="font-serif-display text-[25px] md:text-3xl text-ivory font-light italic mb-3"
+          className="font-serif-display text-[28px] md:text-3xl text-ivory font-light italic mb-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.85 }}
           viewport={{ once: false, amount: 0.3 }}
@@ -43,7 +43,7 @@ const CTASection = () => {
           Algunos vinos acompañan, otros definen.
         </motion.p>
         <motion.p
-          className="font-serif-display text-[25px] md:text-3xl text-ivory font-light italic mb-14"
+          className="font-serif-display text-[28px] md:text-3xl text-ivory font-light italic mb-14"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 0.85 }}
           viewport={{ once: false, amount: 0.3 }}
