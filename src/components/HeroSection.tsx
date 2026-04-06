@@ -1,16 +1,37 @@
 import { motion } from "framer-motion";
 import heroBottle from "@/assets/hero-bottle.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { translations } from "@/i18n/translations";
+import { translations, Lang } from "@/i18n/translations";
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
+const langs: { code: Lang; label: string }[] = [
+  { code: "es", label: "ES" },
+  { code: "pt", label: "PT" },
+  { code: "en", label: "EN" },
+];
 
 const HeroSection = () => {
-  const { lang } = useLanguage();
+  const { lang, setLang } = useLanguage();
   const t = translations.hero;
 
   return (
     <section className="snap-section relative h-[100dvh] flex items-center justify-center bg-background overflow-hidden">
+      {/* Language selector */}
+      <div className="absolute top-6 right-6 z-20 flex gap-3">
+        {langs.map((l) => (
+          <button
+            key={l.code}
+            onClick={() => setLang(l.code)}
+            className={`text-[11px] tracking-[0.25em] transition-all duration-700 ${
+              lang === l.code
+                ? "text-gold border-b border-gold/60 pb-0.5"
+                : "text-ivory/40 hover:text-ivory/70"
+            }`}
+          >
+            {l.label}
+          </button>
+        ))}
+      </div>
       <motion.div
         className="absolute inset-0"
         initial={{ opacity: 0, scale: 1.05 }}
