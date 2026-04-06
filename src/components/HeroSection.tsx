@@ -1,12 +1,17 @@
 import { motion } from "framer-motion";
 import heroBottle from "@/assets/hero-bottle.jpg";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { translations } from "@/i18n/translations";
+import { translations, Lang } from "@/i18n/translations";
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
+const langs: { code: Lang; label: string }[] = [
+  { code: "es", label: "ES" },
+  { code: "pt", label: "PT" },
+  { code: "en", label: "EN" },
+];
 
 const HeroSection = () => {
-  const { lang } = useLanguage();
+  const { lang, setLang } = useLanguage();
   const t = translations.hero;
 
   return (
