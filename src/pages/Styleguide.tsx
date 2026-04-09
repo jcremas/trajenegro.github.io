@@ -120,6 +120,18 @@ const Styleguide = () => {
               Hay elecciones que no necesitan explicación. Traje Negro representa eso: presencia, decisión y carácter.
             </p>
           </div>
+          <div>
+            <p className="text-muted-foreground text-xs mb-2 uppercase tracking-widest">Párrafos destacados — Rojo + Bold</p>
+            <p className="font-serif-display text-[31px] md:text-[33px] lg:text-[40px] leading-snug text-[hsl(0,70%,50%)] font-bold">
+              No es un vino.
+            </p>
+            <p className="font-serif-display text-[31px] md:text-[33px] lg:text-[40px] leading-snug text-[hsl(0,70%,50%)] font-bold">
+              Es una forma de estar.
+            </p>
+            <p className="text-muted-foreground text-xs mt-3">
+              Los primeros párrafos de cada slide se resaltan en <code className="text-gold">hsl(0,70%,50%)</code> + <code className="text-gold">font-bold</code> con <code className="text-gold">leading-snug</code>. El prop <code className="text-gold">redParagraphs</code> controla cuántos (default: 1).
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -129,7 +141,8 @@ const Styleguide = () => {
           {[
             { spec: "Hero título — 34px / md:5xl / lg:6xl", cls: "font-montserrat text-cinematic text-[34px]", text: "TRAJE NEGRO" },
             { spec: "Subtítulo Hero — 28px / md:4xl (Serif)", cls: "font-serif-display text-[28px] italic font-light", text: "El carácter no se negocia." },
-            { spec: "Slide body — 28px / md:2xl / lg:3xl (Serif)", cls: "font-serif-display text-[28px] font-light", text: "No es un vino. Es una forma de estar." },
+            { spec: "Slide rojo — 31px / md:33px / lg:40px (Serif Bold)", cls: "font-serif-display text-[31px] md:text-[33px] lg:text-[40px] font-bold leading-snug text-[hsl(0,70%,50%)]", text: "No es un vino." },
+            { spec: "Slide body — 28px / md:2xl / lg:3xl (Serif Light)", cls: "font-serif-display text-[28px] font-light leading-loose", text: "Hay elecciones que no necesitan explicación." },
             { spec: "CTA button — xs, tracking-[0.35em]", cls: "font-montserrat text-cinematic text-xs tracking-[0.35em]", text: "EXPLORAR TRAJE NEGRO" },
             { spec: "Label / caption — xs, tracking-widest", cls: "font-montserrat text-xs uppercase tracking-widest", text: "SECCIÓN LABEL" },
           ].map(({ spec, cls, text }) => (
