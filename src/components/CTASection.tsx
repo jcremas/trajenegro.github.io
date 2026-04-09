@@ -54,7 +54,18 @@ const CTASection = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 2.5, ease: asmrEase, delay: 1.4 }}
         >
-          {t.line2[lang]}
+          {(() => {
+            const text = t.line2[lang];
+            const spaceIdx = text.indexOf(" ");
+            const firstWord = text.slice(0, spaceIdx);
+            const rest = text.slice(spaceIdx);
+            return (
+              <>
+                <span className="asmr-color-cycle">{firstWord}</span>
+                {rest}
+              </>
+            );
+          })()}
         </motion.p>
 
         <motion.button
