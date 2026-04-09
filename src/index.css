@@ -139,13 +139,17 @@
   }
 
   .asmr-color-cycle {
-    animation: asmr-color-cycle 4s ease-in-out infinite;
+    display: inline-block;
+    animation: asmr-color-cycle 5s ease-in-out infinite;
   }
 
   @keyframes asmr-color-cycle {
-    0%, 100% { color: hsl(var(--ivory)); }
-    40% { color: hsl(var(--ivory)); }
-    50% { color: hsl(0, 70%, 50%); }
-    60% { color: hsl(var(--ivory)); }
+    0%, 20% { color: hsl(var(--ivory)); clip-path: inset(0 0 0 0); }
+    25% { color: hsl(var(--ivory)); }
+    30% { color: hsl(0, 70%, 50%); clip-path: inset(0 0 0 0); }
+    50%, 70% { color: hsl(0, 70%, 50%); }
+    75% { color: hsl(0, 70%, 50%); }
+    80% { color: hsl(var(--ivory)); }
+    100% { color: hsl(var(--ivory)); }
   }
 }
