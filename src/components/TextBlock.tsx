@@ -6,11 +6,12 @@ interface TextBlockProps {
   overlayOpacity?: number;
   alignment?: "center" | "left" | "right";
   containImage?: boolean;
+  redParagraphs?: number;
 }
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
 
-const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", containImage = false }: TextBlockProps) => {
+const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", containImage = false, redParagraphs = 1 }: TextBlockProps) => {
   const alignClass = alignment === "left" ? "items-start text-left" : alignment === "right" ? "items-end text-right" : "items-center text-center";
 
   return (
@@ -45,27 +46,30 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
         transition={{ duration: 2.5, ease: asmrEase }}
       >
         <div className="w-8 h-px bg-gold mb-12 asmr-breathe" />
-        {lines.map((line, i) => {
-          if (line === "") {
-            return <div key={i} className="h-6 md:h-10" />;
-          }
-          const firstNonEmptyIndex = lines.findIndex((l) => l !== "");
-          const isFirstParagraph = i === firstNonEmptyIndex;
-          return (
-            <motion.p
-              key={i}
-              className={`font-serif-display text-[28px] md:text-3xl lg:text-4xl leading-loose ${
-                isFirstParagraph ? 'text-[hsl(0,70%,50%)] font-bold' : 'text-ivory font-light'
-              }`}
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 0.9, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }}
-              transition={{ duration: 2, ease: asmrEase, delay: 0.3 * i }}
-            >
-              {line}
-            </motion.p>
-          );
-        })}
+        {(() => {
+          let paragraphIndex = 0;
+          return lines.map((line, i) => {
+            if (line === "") {
+              return <div key={i} className="h-6 md:h-10" />;
+            }
+            const isRed = paragraphIndex < redParagraphs;
+            paragraphIndex++;
+            return (
+              <motion.p
+                key={i}
+                className={`font-serif-display text-[28px] md:text-3xl lg:text-4xl leading-loose ${
+                  isRed ? 'text-[hsl(0,70%,50%)] font-bold' : 'text-ivory font-light'
+                }`}
+                initial={{ opacity: 0, y: 12 }}
+                whileInView={{ opacity: 0.9, y: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 2, ease: asmrEase, delay: 0.3 * i }}
+              >
+                {line}
+              </motion.p>
+            );
+          });
+        })()}
         <div className="w-8 h-px bg-gold mt-12 asmr-breathe" />
       </motion.div>
     </section>
