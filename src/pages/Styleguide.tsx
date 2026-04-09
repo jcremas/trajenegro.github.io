@@ -120,6 +120,18 @@ const Styleguide = () => {
               Hay elecciones que no necesitan explicación. Traje Negro representa eso: presencia, decisión y carácter.
             </p>
           </div>
+          <div>
+            <p className="text-muted-foreground text-xs mb-2 uppercase tracking-widest">Párrafos destacados — Rojo + Bold</p>
+            <p className="font-serif-display text-[31px] md:text-[33px] lg:text-[40px] leading-snug text-[hsl(0,70%,50%)] font-bold">
+              No es un vino.
+            </p>
+            <p className="font-serif-display text-[31px] md:text-[33px] lg:text-[40px] leading-snug text-[hsl(0,70%,50%)] font-bold">
+              Es una forma de estar.
+            </p>
+            <p className="text-muted-foreground text-xs mt-3">
+              Los primeros párrafos de cada slide se resaltan en <code className="text-gold">hsl(0,70%,50%)</code> + <code className="text-gold">font-bold</code> con <code className="text-gold">leading-snug</code>. El prop <code className="text-gold">redParagraphs</code> controla cuántos (default: 1).
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -129,7 +141,8 @@ const Styleguide = () => {
           {[
             { spec: "Hero título — 34px / md:5xl / lg:6xl", cls: "font-montserrat text-cinematic text-[34px]", text: "TRAJE NEGRO" },
             { spec: "Subtítulo Hero — 28px / md:4xl (Serif)", cls: "font-serif-display text-[28px] italic font-light", text: "El carácter no se negocia." },
-            { spec: "Slide body — 28px / md:2xl / lg:3xl (Serif)", cls: "font-serif-display text-[28px] font-light", text: "No es un vino. Es una forma de estar." },
+            { spec: "Slide rojo — 31px / md:33px / lg:40px (Serif Bold)", cls: "font-serif-display text-[31px] md:text-[33px] lg:text-[40px] font-bold leading-snug text-[hsl(0,70%,50%)]", text: "No es un vino." },
+            { spec: "Slide body — 28px / md:2xl / lg:3xl (Serif Light)", cls: "font-serif-display text-[28px] font-light leading-loose", text: "Hay elecciones que no necesitan explicación." },
             { spec: "CTA button — xs, tracking-[0.35em]", cls: "font-montserrat text-cinematic text-xs tracking-[0.35em]", text: "EXPLORAR TRAJE NEGRO" },
             { spec: "Label / caption — xs, tracking-widest", cls: "font-montserrat text-xs uppercase tracking-widest", text: "SECCIÓN LABEL" },
           ].map(({ spec, cls, text }) => (
@@ -180,6 +193,24 @@ const Styleguide = () => {
               const asmrEase = [0.25, 0.1, 0.25, 1];<br />
               duration: 2.5 – 5s (entradas), 1.5s (hover/tap)
             </code>
+          </div>
+          <div>
+            <p className="text-muted-foreground text-xs mb-3 uppercase tracking-widest">.asmr-scroll-word — Scroll vertical de palabras (6s)</p>
+            <div className="flex items-baseline gap-2">
+              <span className="font-serif-display text-ivory text-3xl font-bold">
+                <span className="asmr-scroll-word">
+                  <span className="asmr-scroll-inner">
+                    <span className="asmr-scroll-white">Beber</span>
+                    <span className="asmr-scroll-red">Ver</span>
+                    <span className="asmr-scroll-white">Beber</span>
+                  </span>
+                </span>
+              </span>
+              <span className="font-serif-display text-ivory text-3xl font-light">para creer.</span>
+            </div>
+            <p className="text-muted-foreground text-xs mt-3">
+              Alterna entre blanco y rojo con scroll-up. Clases: <code className="text-gold">asmr-scroll-word</code>, <code className="text-gold">asmr-scroll-inner</code>, <code className="text-gold">asmr-scroll-white</code>, <code className="text-gold">asmr-scroll-red</code>.
+            </p>
           </div>
         </div>
       </Section>
@@ -431,13 +462,14 @@ const Styleguide = () => {
           <p>• Móvil: fuente base <code className="text-gold">28px</code> para slides, <code className="text-gold">34px</code> título hero</p>
           <p>• Tablet (md): escala estándar de Tailwind</p>
           <p>• Desktop (lg): tamaños más grandes vía <code className="text-gold">lg:</code> prefix</p>
+          <p>• Texto rojo: <code className="text-gold">31px / md:33px / lg:40px</code> (10% mayor que texto normal)</p>
           <p>• Imágenes: <code className="text-gold">object-cover</code> por defecto, <code className="text-gold">object-contain</code> cuando se debe mostrar completa</p>
         </div>
       </Section>
 
       <footer className="border-t border-border pt-8 mt-16 mb-8">
         <p className="text-muted-foreground text-xs tracking-widest uppercase">
-          Traje Negro — Design System v2.0
+          Traje Negro — Design System v3.0
         </p>
       </footer>
     </div>
