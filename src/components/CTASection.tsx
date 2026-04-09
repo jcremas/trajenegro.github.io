@@ -58,13 +58,14 @@ const CTASection = () => {
             const text = t.line2[lang];
             const spaceIdx = text.indexOf(" ");
             const firstWord = text.slice(0, spaceIdx);
+            const redWord = { es: "Ver", pt: "Ver", en: "See" }[lang];
             const rest = text.slice(spaceIdx);
             return (
               <>
                 <span className="asmr-scroll-word">
                   <span className="asmr-scroll-inner">
                     <span className="asmr-scroll-white">{firstWord}</span>
-                    <span className="asmr-scroll-red">{firstWord}</span>
+                    <span className="asmr-scroll-red">{redWord}</span>
                     <span className="asmr-scroll-white">{firstWord}</span>
                   </span>
                 </span>

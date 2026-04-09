@@ -140,7 +140,7 @@ export const translations = {
     line2: {
       es: "Beber para creer.",
       pt: "Beber para crer.",
-      en: "Drink to believe.",
+      en: "Sip to believe.",
     },
     button: {
       es: "EXPLORAR TRAJE NEGRO",
