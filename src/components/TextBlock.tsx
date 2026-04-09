@@ -57,8 +57,8 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
             return (
               <motion.p
                 key={i}
-                className={`font-serif-display text-[28px] md:text-3xl lg:text-4xl leading-loose ${
-                  isRed ? 'text-[hsl(0,70%,50%)] font-bold' : 'text-ivory font-light'
+                className={`font-serif-display leading-loose ${
+                  isRed ? 'text-[31px] md:text-[33px] lg:text-[40px] text-[hsl(0,70%,50%)] font-bold' : 'text-[28px] md:text-3xl lg:text-4xl text-ivory font-light'
                 }`}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 0.9, y: 0 }}
