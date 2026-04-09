@@ -14,6 +14,7 @@ import sceneExclusive from "@/assets/scene-exclusive.jpg";
 
 const blockImages = [sceneWineGlass, sceneElegance, sceneVineyard, sceneExclusive];
 const blockOverlays = [0.55, 0.68, 0.65, 0.65];
+const blockRedParagraphs = [2, 2, 1, 2];
 
 const Index = () => {
   const mainRef = useRef<HTMLElement>(null);
@@ -32,6 +33,7 @@ const Index = () => {
             image={blockImages[i]}
             overlayOpacity={blockOverlays[i]}
             lines={block.lines[lang] as unknown as string[]}
+            redParagraphs={blockRedParagraphs[i]}
           />
         </div>
       ))}
