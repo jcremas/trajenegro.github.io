@@ -50,6 +50,13 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
           let paragraphIndex = 0;
           return lines.map((line, i) => {
             if (line === "") {
+              // Check if this empty line is between two red paragraphs — if so, skip it
+              const prevParagraphs = lines.slice(0, i).filter(l => l !== "").length;
+              const nextNonEmpty = lines.slice(i + 1).find(l => l !== "");
+              const nextParagraphIndex = prevParagraphs;
+              if (prevParagraphs <= redParagraphs && nextNonEmpty && nextParagraphIndex < redParagraphs) {
+                return null;
+              }
               return <div key={i} className="h-6 md:h-10" />;
             }
             const isRed = paragraphIndex < redParagraphs;
@@ -57,8 +64,8 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
             return (
               <motion.p
                 key={i}
-                className={`font-serif-display leading-loose ${
-                  isRed ? 'text-[31px] md:text-[33px] lg:text-[40px] text-[hsl(0,70%,50%)] font-bold' : 'text-[28px] md:text-3xl lg:text-4xl text-ivory font-light'
+                className={`font-serif-display ${
+                  isRed ? 'leading-snug text-[31px] md:text-[33px] lg:text-[40px] text-[hsl(0,70%,50%)] font-bold' : 'leading-loose text-[28px] md:text-3xl lg:text-4xl text-ivory font-light'
                 }`}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 0.9, y: 0 }}
