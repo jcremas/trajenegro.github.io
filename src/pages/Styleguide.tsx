@@ -194,6 +194,24 @@ const Styleguide = () => {
               duration: 2.5 – 5s (entradas), 1.5s (hover/tap)
             </code>
           </div>
+          <div>
+            <p className="text-muted-foreground text-xs mb-3 uppercase tracking-widest">.asmr-scroll-word — Scroll vertical de palabras (6s)</p>
+            <div className="flex items-baseline gap-2">
+              <span className="font-serif-display text-ivory text-3xl font-bold">
+                <span className="asmr-scroll-word">
+                  <span className="asmr-scroll-inner">
+                    <span className="asmr-scroll-white">Beber</span>
+                    <span className="asmr-scroll-red">Ver</span>
+                    <span className="asmr-scroll-white">Beber</span>
+                  </span>
+                </span>
+              </span>
+              <span className="font-serif-display text-ivory text-3xl font-light">para creer.</span>
+            </div>
+            <p className="text-muted-foreground text-xs mt-3">
+              Alterna entre blanco y rojo con scroll-up. Clases: <code className="text-gold">asmr-scroll-word</code>, <code className="text-gold">asmr-scroll-inner</code>, <code className="text-gold">asmr-scroll-white</code>, <code className="text-gold">asmr-scroll-red</code>.
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -444,6 +462,7 @@ const Styleguide = () => {
           <p>• Móvil: fuente base <code className="text-gold">28px</code> para slides, <code className="text-gold">34px</code> título hero</p>
           <p>• Tablet (md): escala estándar de Tailwind</p>
           <p>• Desktop (lg): tamaños más grandes vía <code className="text-gold">lg:</code> prefix</p>
+          <p>• Texto rojo: <code className="text-gold">31px / md:33px / lg:40px</code> (10% mayor que texto normal)</p>
           <p>• Imágenes: <code className="text-gold">object-cover</code> por defecto, <code className="text-gold">object-contain</code> cuando se debe mostrar completa</p>
         </div>
       </Section>
