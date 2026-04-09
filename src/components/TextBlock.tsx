@@ -49,10 +49,14 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
           if (line === "") {
             return <div key={i} className="h-6 md:h-10" />;
           }
+          const firstNonEmptyIndex = lines.findIndex((l) => l !== "");
+          const isFirstParagraph = i === firstNonEmptyIndex;
           return (
             <motion.p
               key={i}
-              className="font-serif-display text-[28px] md:text-3xl lg:text-4xl text-ivory font-light leading-loose"
+              className={`font-serif-display text-[28px] md:text-3xl lg:text-4xl leading-loose ${
+                isFirstParagraph ? 'text-[hsl(0,70%,50%)] font-bold' : 'text-ivory font-light'
+              }`}
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 0.9, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}
