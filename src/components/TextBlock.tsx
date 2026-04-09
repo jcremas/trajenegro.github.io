@@ -49,6 +49,8 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
           if (line === "") {
             return <div key={i} className="h-6 md:h-10" />;
           }
+          const firstNonEmptyIndex = lines.findIndex((l) => l !== "");
+          const isFirstParagraph = i === firstNonEmptyIndex;
           return (
             <motion.p
               key={i}
