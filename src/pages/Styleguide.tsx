@@ -469,7 +469,7 @@ const Styleguide = () => {
 
       <footer className="border-t border-border pt-8 mt-16 mb-8">
         <p className="text-muted-foreground text-xs tracking-widest uppercase">
-          Traje Negro — Design System v2.0
+          Traje Negro — Design System v3.0
         </p>
       </footer>
     </div>
