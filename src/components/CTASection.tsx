@@ -61,7 +61,13 @@ const CTASection = () => {
             const rest = text.slice(spaceIdx);
             return (
               <>
-                <span className="asmr-color-cycle">{firstWord}</span>
+                <span className="asmr-scroll-word">
+                  <span className="asmr-scroll-inner">
+                    <span className="asmr-scroll-white">{firstWord}</span>
+                    <span className="asmr-scroll-red">{firstWord}</span>
+                    <span className="asmr-scroll-white">{firstWord}</span>
+                  </span>
+                </span>
                 {rest}
               </>
             );

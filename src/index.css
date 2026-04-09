@@ -138,14 +138,38 @@
     100% { transform: scale(1.08) translate(-1%, -0.5%); }
   }
 
-  .asmr-color-cycle {
-    animation: asmr-color-cycle 4s ease-in-out infinite;
+  .asmr-scroll-word {
+    display: inline-block;
+    height: 1.2em;
+    overflow: hidden;
+    vertical-align: bottom;
+    position: relative;
   }
 
-  @keyframes asmr-color-cycle {
-    0%, 100% { color: hsl(var(--ivory)); }
-    40% { color: hsl(var(--ivory)); }
-    50% { color: hsl(0, 70%, 50%); }
-    60% { color: hsl(var(--ivory)); }
+  .asmr-scroll-inner {
+    display: flex;
+    flex-direction: column;
+    animation: asmr-scroll-up 6s ease-in-out infinite;
+  }
+
+  .asmr-scroll-inner > span {
+    display: block;
+    height: 1.2em;
+    line-height: 1.2em;
+  }
+
+  .asmr-scroll-white {
+    color: hsl(var(--ivory));
+  }
+
+  .asmr-scroll-red {
+    color: hsl(0, 70%, 50%);
+  }
+
+  @keyframes asmr-scroll-up {
+    0%, 25% { transform: translateY(0); }
+    33%, 58% { transform: translateY(-33.333%); }
+    66%, 91% { transform: translateY(-66.666%); }
+    100% { transform: translateY(-66.666%); }
   }
 }
