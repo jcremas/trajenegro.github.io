@@ -1,10 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Montserrat, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { LanguageProvider } from "@/lib/i18n/language-context";
+import { Providers } from "@/components/providers";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -50,11 +47,7 @@ export default function RootLayout({
       className={`${montserrat.variable} ${cormorantGaramond.variable} bg-background`}
     >
       <body className="antialiased">
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <LanguageProvider>{children}</LanguageProvider>
-        </TooltipProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
