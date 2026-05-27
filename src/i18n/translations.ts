@@ -143,9 +143,9 @@ export const translations = {
       en: "Sip to believe.",
     },
     button: {
-      es: "EXPLORAR TRAJE NEGRO",
-      pt: "EXPLORAR TRAJE NEGRO",
-      en: "EXPLORE TRAJE NEGRO",
+      es: "QUIERO SER PARTE",
+      pt: "QUIERO SER PARTE",
+      en: "I WANT TO BE PART",
     },
     disclaimer: {
       es: "Contiene alcohol. Prohibido el consumo a menores de 18 años. Beber responsablemente.",
