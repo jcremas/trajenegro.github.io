@@ -76,7 +76,7 @@ const CTASection = () => {
         </motion.p>
 
         <motion.a
-          href="https://descomunalwines.tiendanube.com"
+          href="https://descomunalwines.mitiendanube.com"
           target="_blank"
           rel="noopener noreferrer"
           className="px-14 py-5 border border-gold/50 text-ivory/80 text-cinematic text-xs
