@@ -107,7 +107,7 @@ const CTASection = () => {
 
       {/* Floating WhatsApp CTA */}
       <motion.a
-        href="https://web.whatsapp.com/send?phone=5492616206265&text=Quisiera%20mayor%20informacion%20de%20Traje%20Negro"
+        href="https://wa.me/5492616206265?text=Quisiera%20mayor%20informacion%20de%20Traje%20Negro"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] shadow-lg shadow-black/40 hover:scale-110 transition-transform duration-300"
