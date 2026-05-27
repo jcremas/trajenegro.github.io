@@ -240,7 +240,7 @@ const Styleguide = () => {
               <Button size="sm">Small</Button>
               <Button size="default">Default</Button>
               <Button size="lg">Large</Button>
-              <Button size="icon"><Wine className="w-4 h-4" /></Button>
+              <Button size="icon" aria-label="Vino"><Wine className="w-4 h-4" /></Button>
             </div>
           </ComponentDemo>
         </div>
@@ -265,9 +265,9 @@ const Styleguide = () => {
 
           <ComponentDemo label="Select">
             <div className="max-w-sm space-y-2">
-              <Label>Varietal</Label>
+              <Label htmlFor="demo-select">Varietal</Label>
               <Select>
-                <SelectTrigger>
+                <SelectTrigger id="demo-select" aria-label="Varietal">
                   <SelectValue placeholder="Elegí un varietal" />
                 </SelectTrigger>
                 <SelectContent>
@@ -286,8 +286,8 @@ const Styleguide = () => {
                 <Label htmlFor="demo-check">Acepto los términos</Label>
               </div>
               <div className="flex items-center gap-2">
-                <Switch checked={switchOn} onCheckedChange={setSwitchOn} />
-                <Label>Notificaciones {switchOn ? "activadas" : "desactivadas"}</Label>
+                <Switch id="demo-switch" checked={switchOn} onCheckedChange={setSwitchOn} aria-label="Notificaciones" />
+                <Label htmlFor="demo-switch">Notificaciones {switchOn ? "activadas" : "desactivadas"}</Label>
               </div>
             </div>
           </ComponentDemo>

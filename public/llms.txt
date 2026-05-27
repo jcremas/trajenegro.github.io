@@ -1,0 +1,9 @@
+# Traje Negro Wines
+
+> Vinos boutique argentinos de carácter, edición limitada. Una experiencia cinematográfica que celebra el arte del vino con elegancia y misterio.
+
+Traje Negro es una marca de vinos boutique enfocada en ediciones limitadas. El sitio presenta una narrativa visual inmersiva en español, portugués e inglés, culminando en un llamado a unirse a la comunidad de la marca.
+
+## Pages
+
+- [Home](/): Experiencia narrativa de la marca Traje Negro con CTA para sumarse.

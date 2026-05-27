@@ -7,15 +7,17 @@ interface TextBlockProps {
   alignment?: "center" | "left" | "right";
   containImage?: boolean;
   redParagraphs?: number;
+  heading?: string;
 }
 
 const asmrEase = [0.25, 0.1, 0.25, 1] as const;
 
-const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", containImage = false, redParagraphs = 1 }: TextBlockProps) => {
+const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", containImage = false, redParagraphs = 1, heading }: TextBlockProps) => {
   const alignClass = alignment === "left" ? "items-start text-left" : alignment === "right" ? "items-end text-right" : "items-center text-center";
 
   return (
     <section className="snap-section relative h-[100dvh] flex items-center justify-center bg-background overflow-hidden">
+      {heading && <h2 className="sr-only">{heading}</h2>}
       {image && (
         <motion.div
           className="absolute inset-0"
