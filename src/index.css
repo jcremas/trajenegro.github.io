@@ -91,6 +91,24 @@
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
   }
+
+  .ig-mobile-webview,
+  .ig-mobile-webview body {
+    width: 100%;
+    max-width: 100vw;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    touch-action: pan-y;
+  }
+
+  .ig-mobile-webview .snap-section {
+    min-height: 100svh;
+  }
+
+  .ig-mobile-webview .scroll-container {
+    height: 100svh;
+    scroll-snap-type: y proximity;
+  }
 }
 
 @layer utilities {
@@ -179,5 +197,19 @@
     33%, 58% { transform: translateY(-33.333%); }
     66%, 91% { transform: translateY(-66.666%); }
     100% { transform: translateY(-66.666%); }
+  }
+
+  @media (max-width: 480px) {
+    .ig-mobile-webview .text-cinematic,
+    .ig-mobile-webview .text-cinematic-lg {
+      letter-spacing: 0.16em !important;
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+
+    .ig-mobile-webview .font-serif-display {
+      line-height: 1.2;
+      overflow-wrap: break-word;
+    }
   }
 }
