@@ -36,15 +36,31 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Traje Negro Wines",
-        "alternateName": "Traje Negro",
+        "alternateName": ["Traje Negro", "Traje Negro Vinos"],
         "url": "https://nero-elegance-scroll.lovable.app/",
         "logo": "https://nero-elegance-scroll.lovable.app/favicon.svg",
-        "description": "Traje Negro es una colección de vinos innovadores, elegantes y con carácter, parte del universo de vinos Descomunal. Vinos fuera de lo común, fáciles de tomar y a precios competitivos, de producción limitada y cercanía con el consumidor.",
+        "description": "Traje Negro es una colección de vinos argentinos innovadores, elegantes y con carácter, parte del universo Descomunal. Vinos de edición limitada elaborados con uvas de viñas de pie franco en la primera zona de Maipú, Mendoza.",
+        "foundingLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Maipú",
+            "addressRegion": "Mendoza",
+            "addressCountry": "AR"
+          }
+        },
+        "areaServed": "AR",
+        "knowsAbout": ["Vinos argentinos", "Malbec", "Cabernet Franc", "Sauvignon Blanc", "Viñas de pie franco", "Maipú Mendoza", "Edición limitada", "Vinos boutique"],
         "brand": {
           "@type": "Brand",
           "name": "Traje Negro",
           "parentOrganization": "Descomunal"
         },
+        "sameAs": [
+          "https://instagram.com/trajenegro.wines",
+          "https://instagram.com/descomunal.wines",
+          "https://instagram.com/pannunzio.wines"
+        ],
         "makesOffer": [
           { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Traje Negro Malbec", "category": "Vino Tinto" } },
           { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Traje Negro Cabernet Franc", "category": "Vino Tinto" } },
@@ -58,7 +74,42 @@
         "@type": "WebSite",
         "name": "Traje Negro Wines",
         "url": "https://nero-elegance-scroll.lovable.app/",
-        "inLanguage": ["es", "pt", "en"]
+        "inLanguage": ["es", "pt", "en"],
+        "publisher": { "@type": "Organization", "name": "Traje Negro Wines" }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Traje Negro Malbec",
+            "category": "Vino Tinto",
+            "brand": { "@type": "Brand", "name": "Traje Negro" },
+            "description": "Malbec de edición limitada de viñas de pie franco en la primera zona de Maipú, Mendoza. Tinto seco, elegante, intenso y aterciopelado, con notas profundas de fruta negra madura y un sutil toque de madera que aporta complejidad y carácter.",
+            "countryOfOrigin": "AR",
+            "manufacturer": { "@type": "Organization", "name": "Descomunal" }
+          },
+          {
+            "@type": "Product",
+            "name": "Traje Negro Cabernet Franc",
+            "category": "Vino Tinto",
+            "brand": { "@type": "Brand", "name": "Traje Negro" },
+            "description": "Cabernet Franc de edición limitada de viñas de pie franco en Maipú, Mendoza. Tinto seco, refinado y expresivo, con un perfil herbáceo elegante, especiado y un delicado toque de madera que realza su carácter distintivo.",
+            "countryOfOrigin": "AR",
+            "manufacturer": { "@type": "Organization", "name": "Descomunal" }
+          },
+          {
+            "@type": "Product",
+            "name": "Traje Negro Sauvignon Blanc",
+            "category": "Vino Blanco",
+            "brand": { "@type": "Brand", "name": "Traje Negro" },
+            "description": "Sauvignon Blanc de edición limitada de viñas de pie franco en la primera zona de Maipú, Mendoza. Blanco seco, fresco y vibrante, con aromas cítricos y herbáceos que expresan pureza y elegancia en cada copa.",
+            "countryOfOrigin": "AR",
+            "manufacturer": { "@type": "Organization", "name": "Descomunal" }
+          }
+        ]
       }
     </script>
     <script type="application/ld+json">
@@ -69,46 +120,64 @@
           {
             "@type": "Question",
             "name": "¿Qué es Traje Negro?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Traje Negro es una colección de vinos innovadores, elegantes y con carácter, parte del universo de vinos Descomunal. Son vinos fuera de lo común, fáciles de tomar y a precios competitivos, de producción limitada y cercanía con el consumidor."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Traje Negro es una colección de vinos argentinos innovadores, elegantes y con carácter, parte del universo de vinos Descomunal. Son vinos de edición limitada, fáciles de tomar y a precios competitivos." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿De dónde son los vinos Traje Negro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Traje Negro se elabora en Mendoza, Argentina, con uvas de fincas propias ubicadas en la primera zona de Maipú, una de las regiones vitivinícolas más prestigiosas del país." }
           },
           {
             "@type": "Question",
             "name": "¿Quién hace los vinos Traje Negro?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Traje Negro es elaborado por el equipo de Descomunal, un universo de vinos enfocado en propuestas innovadoras, elegantes y de producción limitada con cercanía al consumidor."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Traje Negro es elaborado por el equipo de Descomunal, un universo de vinos enfocado en propuestas innovadoras, elegantes y de producción limitada con cercanía al consumidor." }
           },
           {
             "@type": "Question",
-            "name": "¿Qué tipo de vinos hace Traje Negro?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Traje Negro produce vinos en tres variedades: Malbec, Cabernet Franc y Sauvignon Blanc. Cada uno es elegante, con carácter y de edición limitada."
-            }
+            "name": "¿Qué variedades de vino hace Traje Negro?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Traje Negro produce tres variedades de edición limitada: Malbec, Cabernet Franc y Sauvignon Blanc. Los tintos suman un sutil toque de madera que aporta complejidad." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué significa que las viñas sean de pie franco?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pie franco significa que las plantas crecen sobre su propia raíz original, sin injertos. Esto aporta mayor concentración, autenticidad y carácter al vino, una característica distintiva de las fincas de Traje Negro en Maipú." }
           },
           {
             "@type": "Question",
             "name": "¿Cuál es la esencia de Traje Negro?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "La esencia de Traje Negro es ser un enigma: vinos innovadores y elegantes, con carácter propio, fáciles de disfrutar, a precios competitivos y de producción limitada para mantener la cercanía con cada consumidor."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "La esencia de Traje Negro es ser un enigma: vinos elegantes y con carácter, de edición limitada, que combinan innovación, accesibilidad y cercanía con cada consumidor." }
           },
           {
             "@type": "Question",
             "name": "¿Dónde se pueden conseguir los vinos Traje Negro?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Por ser de producción limitada, Traje Negro se distribuye de forma selectiva. Para conocer los puntos de venta y disponibilidad actual, contactar directamente a través del sitio oficial."
-            }
+            "acceptedAnswer": { "@type": "Answer", "text": "Por ser de producción limitada, Traje Negro se distribuye de forma selectiva. Para conocer los puntos de venta actuales, contactar a través del sitio oficial o de Instagram @trajenegro.wines." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Son vinos secos o dulces?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Todos los vinos Traje Negro son secos: el Malbec y el Cabernet Franc son tintos secos con cuerpo, y el Sauvignon Blanc es un blanco seco, fresco y vibrante." }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Traje Negro es parte de qué bodega?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Traje Negro forma parte del universo de vinos Descomunal, que también incluye las líneas Descomunal y Pannunzio. Todas comparten una filosofía de vinos fuera de lo común, elegantes y de producción limitada." }
           }
         ]
       }
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "url": "https://nero-elegance-scroll.lovable.app/",
+        "name": "Traje Negro Wines",
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", "h2", ".speakable"]
+        }
+      }
+    </script>
+
 
   </head>
 
