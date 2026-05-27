@@ -70,6 +70,7 @@ const HeroSection = () => {
           transition={{ duration: 4, ease: asmrEase, delay: 2 }}
         >
           {t.title[lang]}
+          <span className="sr-only"> — Vinos de carácter, edición limitada</span>
         </motion.h1>
 
         <motion.p
