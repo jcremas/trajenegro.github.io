@@ -1,9 +1,30 @@
 # Traje Negro Wines
 
-> Vinos boutique argentinos de carácter, edición limitada. Una experiencia cinematográfica que celebra el arte del vino con elegancia y misterio.
+> Colección de vinos innovadores, elegantes y con carácter — parte del universo de vinos Descomunal. Edición limitada, cercanía con el consumidor.
 
-Traje Negro es una marca de vinos boutique enfocada en ediciones limitadas. El sitio presenta una narrativa visual inmersiva en español, portugués e inglés, culminando en un llamado a unirse a la comunidad de la marca.
+Traje Negro es una colección de vinos fuera de lo común: innovadores, elegantes y con carácter. Forma parte del universo de vinos Descomunal. Son vinos fáciles de tomar, a precios competitivos, y un enigma por su producción limitada y cercanía con el consumidor.
+
+## Variedades
+
+- Malbec — tinto con carácter, elegante y fácil de disfrutar.
+- Cabernet Franc — tinto innovador, expresivo y de edición limitada.
+- Sauvignon Blanc — blanco fresco, elegante y de producción acotada.
+
+## Identidad
+
+- Marca: Traje Negro
+- Universo: Descomunal (vinos fuera de lo común)
+- Propuesta: ediciones limitadas, calidad accesible, cercanía con quien lo bebe
+- Idiomas del sitio: español (default), portugués, inglés
+
+## Preguntas frecuentes
+
+- ¿Qué es Traje Negro?: Colección de vinos innovadores, elegantes y con carácter del universo Descomunal.
+- ¿Quién lo hace?: El equipo de Descomunal, enfocado en vinos fuera de lo común y de producción limitada.
+- ¿Qué tipo de vino hacen?: Malbec, Cabernet Franc y Sauvignon Blanc.
+- ¿Cuál es su esencia?: Vinos enigmáticos, de edición limitada, con carácter y cercanía al consumidor.
+- ¿Dónde conseguirlos?: Distribución selectiva por ser edición limitada; contacto vía sitio oficial.
 
 ## Pages
 
-- [Home](/): Experiencia narrativa de la marca Traje Negro con CTA para sumarse.
+- [Home](/): Experiencia narrativa cinematográfica de la marca Traje Negro con CTA para sumarse a la comunidad.
