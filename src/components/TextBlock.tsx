@@ -41,7 +41,7 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
       )}
 
       <motion.div
-        className={`relative z-10 flex flex-col ${alignClass} px-8 md:px-16 max-w-[650px]`}
+        className={`relative z-10 flex flex-col ${alignClass} px-6 sm:px-8 md:px-16 max-w-[650px] w-full`}
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.2 }}
@@ -66,8 +66,8 @@ const TextBlock = ({ lines, image, overlayOpacity = 0.7, alignment = "center", c
             return (
               <motion.p
                 key={i}
-                className={`font-serif-display ${
-                  isRed ? 'leading-snug text-[31px] md:text-[33px] lg:text-[40px] text-[hsl(0,70%,50%)] font-bold' : 'leading-loose text-[28px] md:text-3xl lg:text-4xl text-ivory font-light'
+                className={`font-serif-display max-w-full break-words ${
+                  isRed ? 'leading-snug text-[24px] sm:text-[31px] md:text-[33px] lg:text-[40px] text-[hsl(0,70%,50%)] font-bold' : 'leading-loose text-[22px] sm:text-[28px] md:text-3xl lg:text-4xl text-ivory font-light'
                 }`}
                 initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 0.9, y: 0 }}
