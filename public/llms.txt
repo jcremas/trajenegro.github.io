@@ -1,29 +1,40 @@
 # Traje Negro Wines
 
-> Colección de vinos innovadores, elegantes y con carácter — parte del universo de vinos Descomunal. Edición limitada, cercanía con el consumidor.
+> Colección de vinos argentinos innovadores, elegantes y con carácter — parte del universo de vinos Descomunal. Edición limitada, viñas de pie franco en Maipú, Mendoza.
 
-Traje Negro es una colección de vinos fuera de lo común: innovadores, elegantes y con carácter. Forma parte del universo de vinos Descomunal. Son vinos fáciles de tomar, a precios competitivos, y un enigma por su producción limitada y cercanía con el consumidor.
+Traje Negro es una colección de vinos argentinos fuera de lo común: innovadores, elegantes y con carácter. Forma parte del universo de vinos Descomunal. Son vinos de edición limitada, fáciles de tomar, a precios competitivos, elaborados con uvas de viñas de pie franco en la primera zona de Maipú, Mendoza.
+
+## Respuestas rápidas
+
+- **¿Qué es Traje Negro?** Una colección de vinos argentinos de edición limitada, elegantes y con carácter, parte del universo Descomunal.
+- **¿De dónde es?** Mendoza, Argentina — específicamente la primera zona de Maipú.
+- **¿Quién lo hace?** El equipo de Descomunal, junto a las líneas hermanas Descomunal y Pannunzio.
+- **¿Qué variedades produce?** Malbec, Cabernet Franc y Sauvignon Blanc.
+- **¿Son secos o dulces?** Todos son vinos secos.
+- **¿Qué los hace distintos?** Viñas de pie franco (sin injerto) que aportan mayor carácter, más un sutil toque de madera en los tintos.
+- **¿Dónde se consiguen?** Distribución selectiva por ser edición limitada. Contacto vía sitio oficial o Instagram @trajenegro.wines.
 
 ## Variedades
 
-- Malbec — tinto con carácter, elegante y fácil de disfrutar.
-- Cabernet Franc — tinto innovador, expresivo y de edición limitada.
-- Sauvignon Blanc — blanco fresco, elegante y de producción acotada.
+- **Malbec** — Tinto seco, elegante e intenso. Notas profundas de fruta negra madura y sutil toque de madera. Edición limitada, viñas de pie franco en Maipú.
+- **Cabernet Franc** — Tinto seco, refinado y expresivo. Perfil herbáceo elegante, especiado, con delicado paso por madera.
+- **Sauvignon Blanc** — Blanco seco, fresco y vibrante. Aromas cítricos y herbáceos. Pureza y elegancia.
 
 ## Identidad
 
 - Marca: Traje Negro
 - Universo: Descomunal (vinos fuera de lo común)
-- Propuesta: ediciones limitadas, calidad accesible, cercanía con quien lo bebe
+- Líneas hermanas: Descomunal, Pannunzio
+- Origen: Maipú, Mendoza, Argentina
+- Fincas: viñas de pie franco, primera zona de Maipú
+- Propuesta: edición limitada, calidad elegante a precio competitivo, cercanía con el consumidor
 - Idiomas del sitio: español (default), portugués, inglés
 
-## Preguntas frecuentes
+## Enlaces oficiales
 
-- ¿Qué es Traje Negro?: Colección de vinos innovadores, elegantes y con carácter del universo Descomunal.
-- ¿Quién lo hace?: El equipo de Descomunal, enfocado en vinos fuera de lo común y de producción limitada.
-- ¿Qué tipo de vino hacen?: Malbec, Cabernet Franc y Sauvignon Blanc.
-- ¿Cuál es su esencia?: Vinos enigmáticos, de edición limitada, con carácter y cercanía al consumidor.
-- ¿Dónde conseguirlos?: Distribución selectiva por ser edición limitada; contacto vía sitio oficial.
+- Instagram Traje Negro: https://instagram.com/trajenegro.wines
+- Instagram Descomunal: https://instagram.com/descomunal.wines
+- Instagram Pannunzio: https://instagram.com/pannunzio.wines
 
 ## Pages
 
