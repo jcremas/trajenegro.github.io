@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://nero-elegance-scroll.lovable.app/sitemap.xml
+Sitemap: https://trajenegro.com/sitemap.xml
