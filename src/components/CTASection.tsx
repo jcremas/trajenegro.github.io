@@ -75,7 +75,10 @@ const CTASection = () => {
           })()}
         </motion.p>
 
-        <motion.button
+        <motion.a
+          href="https://descomunalwines.tiendanube.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="px-14 py-5 border border-gold/50 text-ivory/80 text-cinematic text-xs
                      bg-transparent hover:border-gold hover:text-ivory
                      transition-all duration-[1.5s] ease-in-out tracking-[0.35em]"
@@ -87,7 +90,7 @@ const CTASection = () => {
           whileTap={{ scale: 0.99 }}
         >
           {t.button[lang]}
-        </motion.button>
+        </motion.a>
 
         <div className="w-10 h-px bg-gold mt-12 asmr-breathe" />
       </motion.div>
