@@ -204,16 +204,21 @@
   }
 
   @media (max-width: 480px) {
-    .ig-mobile-webview .text-cinematic,
-    .ig-mobile-webview .text-cinematic-lg {
-      letter-spacing: 0.16em !important;
+    .text-cinematic,
+    .text-cinematic-lg {
+      letter-spacing: 0.18em !important;
       overflow-wrap: anywhere;
       word-break: normal;
     }
 
-    .ig-mobile-webview .font-serif-display {
+    .font-serif-display {
       line-height: 1.2;
       overflow-wrap: break-word;
+    }
+
+    /* Mobile: relax mandatory snap to avoid scroll trapping in webviews */
+    .scroll-container {
+      scroll-snap-type: y proximity;
     }
   }
 }
