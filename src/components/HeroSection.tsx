@@ -64,9 +64,9 @@ const HeroSection = () => {
         />
 
         <motion.h1
-          className="text-cinematic-lg text-ivory text-[34px] md:text-6xl lg:text-7xl"
-          initial={{ opacity: 0, letterSpacing: "0.6em" }}
-          animate={{ opacity: 1, letterSpacing: "0.4em" }}
+          className="text-cinematic-lg text-ivory text-[26px] sm:text-[34px] md:text-6xl lg:text-7xl px-4 max-w-full break-words"
+          initial={{ opacity: 0, letterSpacing: "0.5em" }}
+          animate={{ opacity: 1, letterSpacing: "0.3em" }}
           transition={{ duration: 4, ease: asmrEase, delay: 2 }}
         >
           {t.title[lang]}
@@ -74,7 +74,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p
-          className="font-serif-display text-[28px] md:text-5xl text-white italic font-light tracking-widest"
+          className="font-serif-display text-[22px] sm:text-[28px] md:text-5xl text-white italic font-light tracking-wider px-4 max-w-full break-words"
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.8 }}
           transition={{ duration: 3, ease: asmrEase, delay: 3.5 }}
